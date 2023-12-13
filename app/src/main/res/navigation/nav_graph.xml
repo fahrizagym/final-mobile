@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/recipeListFragment">
+
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="ercanduman.recipeapplication.ui.recipe.list.RecipeListFragment"
+        android:label="@string/label_recipe_list_fragment">
+        <action
+            android:id="@+id/action_navigate_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="ercanduman.recipeapplication.ui.recipe.detail.RecipeDetailsFragment"
+        android:label="@string/label_recipe_detail_fragment" />
+</navigation>
